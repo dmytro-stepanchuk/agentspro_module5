@@ -6,20 +6,11 @@
 
 ```
 module5/
-├── agents_v1/          # LangChain 1.0 + LangGraph 1.0
-│   ├── 01_basic_agent.py
-│   ├── 02_agent_with_middleware.py
-│   ├── 03_rag_agent_langgraph.py
-│   ├── 04_multiagent_langgraph.py
-│   ├── requirements.txt
-│   ├── .env.example
-│   └── README.md
-│
-└── agents_v2/          # CrewAI Framework
-    ├── 01_basic_crew.py
-    ├── 02_hierarchical_crew.py
-    ├── 03_research_crew_with_tools.py
-    ├── 04_memory_enabled_crew.py
+└── agents_v1/          # LangChain 1.0 + LangGraph 1.0
+    ├── 01_basic_agent.py
+    ├── 02_agent_with_middleware.py
+    ├── 03_rag_agent_langgraph.py
+    ├── 04_multiagent_langgraph.py
     ├── requirements.txt
     ├── .env.example
     └── README.md
@@ -55,35 +46,7 @@ module5/
 
 ---
 
-## agents_v2: CrewAI Framework
 
-Приклади, що демонструють CrewAI - фреймворк для оркестрації колаборативних AI-агентів з рольовою моделлю.
-
-### Ключові фічі
-- **Role-playing agents** - агенти з чіткими ролями та цілями
-- **Sequential & Hierarchical processes** - різні моделі виконання
-- **Crew kickoff** - запуск команди агентів
-- **Memory integration** - персистентна пам'ять між сесіями
-- **Conversational Crew** - природна взаємодія з користувачем
-- **Tools ecosystem** - інтеграція з LangChain tools та CrewAI toolkit
-
-### Команди (Crews)
-1. **Basic Crew** - проста команда з послідовним виконанням
-2. **Hierarchical Crew** - ієрархічна структура з менеджером
-3. **Research Crew with Tools** - команда дослідників з інструментами
-4. **Memory-enabled Crew** - команда з персистентною пам'яттю
-
-### Технології
-- CrewAI >= 1.4.0
-- OpenAI GPT-4o-mini
-- LangChain tools integration
-- LangMem для персистентної пам'яті
-- Multimodal support
-- **РЕАЛЬНІ API:** Tavily Search, File I/O tools, Data analysis
-
-[Детальна документація в agents_v2/README.md](agents_v2/README.md)
-
----
 
 ## Швидкий старт
 
@@ -95,7 +58,7 @@ git clone https://github.com/agentspro/module5.git
 cd module5
 ```
 
-2. Оберіть фреймворк (agents_v1 або agents_v2):
+2. Оберіть фреймворк (agents_v1):
 ```bash
 cd agents_v1  # або cd agents_v2
 ```
@@ -143,15 +106,6 @@ python 03_rag_agent_langgraph.py
 python 04_multiagent_langgraph.py
 ```
 
-**agents_v2 (CrewAI):**
-```bash
-cd agents_v2
-python 01_basic_crew.py
-python 02_hierarchical_crew.py
-python 03_research_crew_with_tools.py
-python 04_memory_enabled_crew.py
-```
-
 ---
 
 ## Порівняння фреймворків
@@ -171,21 +125,6 @@ python 04_memory_enabled_crew.py
 - Критична важливість observability
 - Кастомні pattern'и оркестрації
 
-### CrewAI (agents_v2)
-
-**Переваги:**
-- Швидка розробка з простим API
-- Вбудована рольова модель
-- Автоматична делегація задач
-- Природна колаборація між агентами
-- Hierarchical process out-of-the-box
-
-**Використовуйте коли:**
-- Потрібна швидка розробка multi-agent систем
-- Чітка рольова структура команди
-- Автоматична координація між агентами
-- Focus на бізнес-логіку, а не на інфраструктуру
-
 ---
 
 ## Вимоги
@@ -202,12 +141,6 @@ python 04_memory_enabled_crew.py
 - [LangChain Documentation](https://python.langchain.com/)
 - [LangGraph Documentation](https://langchain-ai.github.io/langgraph/)
 - [LangSmith](https://smith.langchain.com/)
-
-### CrewAI
-- [CrewAI Documentation](https://docs.crewai.com/)
-- [CrewAI GitHub](https://github.com/crewAIInc/crewAI)
-- [CrewAI Examples](https://github.com/crewAIInc/crewAI-examples)
-
 ---
 
 ## Ліцензія
@@ -219,3 +152,4 @@ MIT License
 ## Автор
 
 sanyaden <alex.denysyuk@gmail.com>
+
